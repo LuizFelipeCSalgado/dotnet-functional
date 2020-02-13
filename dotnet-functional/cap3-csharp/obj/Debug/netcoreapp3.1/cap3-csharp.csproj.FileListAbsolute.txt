@@ -1,0 +1,11 @@
+/media/pendrive/study/dotnet-functional/cap3-csharp/obj/Debug/netcoreapp3.1/cap3-csharp.csprojAssemblyReference.cache
+/media/pendrive/study/dotnet-functional/cap3-csharp/obj/Debug/netcoreapp3.1/cap3-csharp.AssemblyInfoInputs.cache
+/media/pendrive/study/dotnet-functional/cap3-csharp/obj/Debug/netcoreapp3.1/cap3-csharp.AssemblyInfo.cs
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp.deps.json
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp.runtimeconfig.json
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp.runtimeconfig.dev.json
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp.dll
+/media/pendrive/study/dotnet-functional/cap3-csharp/bin/Debug/netcoreapp3.1/cap3-csharp.pdb
+/media/pendrive/study/dotnet-functional/cap3-csharp/obj/Debug/netcoreapp3.1/cap3-csharp.dll
+/media/pendrive/study/dotnet-functional/cap3-csharp/obj/Debug/netcoreapp3.1/cap3-csharp.pdb

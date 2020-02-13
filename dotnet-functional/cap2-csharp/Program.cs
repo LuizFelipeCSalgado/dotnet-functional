@@ -10,30 +10,6 @@ namespace cap2_csharp
     {
         static void Main(string[] args)
         {
-            // RodarExemploPeriodoDeTempo();
-            Console.WriteLine(ExemploUsoDeDeclaracao(2));
-            Console.WriteLine(ExemploUsoDeDeclaracao(3));
-            Console.WriteLine(ExemploUsoDeDeclaracao(4));
-            Console.WriteLine(ExemploUsoDeDeclaracao(5));
-        }
-
-        // static void ExemploUsoDeDeclaracao(int numero)
-        // {
-        //     int resultado = 0; // em algum momento, o valor dessa var pode ser alterado
-        //                        // e causar resultados inesperados
-        //     bool numeroPar = numero % 2 == 0;
-        //     if (numeroPar) resultado = 2; // não fica explícito de nenhuma forma o valor
-        //     Console.WriteLine(resultado); // do resultado quando o número não for par
-        // }
-        
-        static int ExemploUsoDeDeclaracao(int numero)
-        {
-            bool numeroPar = numero % 2 == 0;
-            return numeroPar ? 2 : 0;
-        }
-
-        static void RodarExemploPeriodoDeTempo()
-        {
             PeriodoDeTempo periodo = new PeriodoDeTempo();
             // O que acontece se esquecermos de preencher
             // DataInicial e DataFinal? Comportamento indesejado

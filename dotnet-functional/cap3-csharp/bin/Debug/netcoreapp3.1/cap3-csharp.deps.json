@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "cap3-csharp/1.0.0": {
+        "runtime": {
+          "cap3-csharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "cap3-csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <RootNamespace>cap2_fsharp</RootNamespace>
+    <RootNamespace>cap3_fsharp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="PeriodoDeTempo.fs" />
+    <Compile Include="FuncoesAninhadas.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
