@@ -11,12 +11,16 @@ namespace cap3_csharp
         static void Main(string[] args)
         {
             // EscreveSeONumeroEhParOuImpar(2);
-            Escrever("Luiz");
-            ImprimirDobroDosNumeros(Enumerable.Range(1, 10).ToList());
-            ImprimirNomes(new List<string>() {
-                    "Maggie", "Lisa", "Leo"
-                    });
+            // Escrever("Luiz");
+            // ImprimirDobroDosNumeros(Enumerable.Range(1, 10).ToList());
+            // ImprimirNomes(new List<string>() {
+            //         "Maggie", "Lisa", "Leo"
+            //         });
             ImprimirNumeros(Enumerable.Range(1, 10).ToList(), 2);
+            Action<int> multiplicarPor5EDepoisImprimir = MultiplicarEImprimirNumero(5);
+            Action<int> multiplicarPor3EDepoisImprimir = MultiplicarEImprimirNumero(3);
+            // multiplicarPor5EDepoisImprimir(5);
+            // multiplicarPor3EDepoisImprimir(5);
         }
 
         static void ImprimirNomes(List<string> nomes) =>
@@ -32,19 +36,24 @@ namespace cap3_csharp
         // Action<int> imprimirNumero = (numero) => Console.WriteLine(
         //         numero * multiplicador);
         // return imprimirNumero;
-        static Action<int> MultiplicarEImprimirNumero(int multiplicador) =>
+        static Action<int> MultiplicarEImprimirNumero (int multiplicador) =>
             (numero) => Console.WriteLine(numero * multiplicador);
 
-        static void ImprimirNumeros(List<int> numeros, int multiplicador) =>
-            ExecutarAcaoSobreElementos(numeros,
-                    MultiplicarEImprimirNumero(multiplicador));
+        // static void ImprimirNumeros(List<int> numeros, int multiplicador) =>
+        //     ExecutarAcaoSobreElementos(numeros,
+        //             MultiplicarEImprimirNumero(multiplicador));
+        static void ImprimirNumeros(List<int> numeros, int multiplicador)
+        {
+            void multiplicaEDepoisImprime (int numero) => MultiplicarEImprimirNumero(multiplicador);
+            ExecutarAcaoSobreElementos(numeros, multiplicaEDepoisImprime);
+        }
 
         static void ExecutarAcaoSobreElementos<TipoElemento>(
                 List<TipoElemento> lista,
                 Action<TipoElemento> acao)
         { lista.ForEach(acao); }
 
-        static void ExemploFuncoesDeAltaOrder()
+        static void ExemploFuncoesDeAltaOrdem()
         {
             List<int> numerosPares = new List<int>();
             IEnumerable<int> numeros = Enumerable.Range(0, 10);
